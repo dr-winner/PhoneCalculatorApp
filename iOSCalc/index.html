@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="calc">
+        <input id="dspl" readonly>
+            <div id="keypads">
+                <button onclick="cleardspl()" class="clrBtn">A/C</button>
+                <button onclick="appendTodspl('+/-')" class="ashkeyBtn">+/-</button>
+                <button onclick="appendTodspl('%')" class="ashkeyBtn">%</button>
+                <button onclick="appendTodspl('/')" class="opBtn">÷</button>
+                <button onclick="appendTodspl('7')">7</button>
+                <button onclick="appendTodspl('8')">8</button>
+                <button onclick="appendTodspl('9')">9</button>
+                <button onclick="appendTodspl('*')" class="opBtn">x</button>
+                <button onclick="appendTodspl('4')">4</button>
+                <button onclick="appendTodspl('5')">5</button>
+                <button onclick="appendTodspl('6')">6</button>
+                <button onclick="appendTodspl('-')" class="opBtn">-</button>
+                <button onclick="appendTodspl('1')">1</button>
+                <button onclick="appendTodspl('2')">2</button>
+                <button onclick="appendTodspl('3')">3</button>
+                <button onclick="appendTodspl('+')" class="opBtn">+</button>
+                <button onclick="appendTodspl('0')">0</button>
+                <button onclick="appendTodspl('.')">.</button>
+                <button onclick="calculate()" class="eqlBtn">=</button>
+            </div>
+        
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
