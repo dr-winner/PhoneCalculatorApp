@@ -6,50 +6,52 @@ body{
     align-items: center;
     height: 100vh;
     background-color: hsl(0, 0%, 100%);
-    /* font-family: "Courier New", Courier, monospace; */
-}
+    border: none;
+  }
 
 #calc{
     font-family: "Courier New", Courier, monospace;
-    background-color: hsl(0, 0%, 15%);
-    border-radius: 15px;
-    max-width: 400px;
+    background-color: hsl(0, 0%, 14%);
+    border-radius: 20px;
+    width: 400px;
     height: 600px;
     overflow: hidden;
     margin: 0 auto;
 }
 
 #dspl{
-    width: 350px;
-    padding: 20px;
+    width: 400px;
+    padding: 10px 0 10px 0;
     font-size: 5rem;
+    /* font-weight: bold; */
     text-align: right;
     border: none;
-    background-color: hsl(0, 0%, 20%);
-    color: white;
+    background-color: hsl(0, 0%, 25%);
+    color: hsl(0, 0%, 100%);
 }
 
-#keypads{
+#keypadsContainer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 25px;
-    height: 70%;
+    /* height: 70%; */
 }
 
-#keypads button:nth-child(17) {
+#keypadsContainer button:nth-child(17) {
     width: calc(100% - 10px); 
     grid-column: span 2;
   }
 
 button{
-    width: auto;
+    width: 80px;
     height: 80px;
+    border: none;
     border-radius: 50px;
     background-color: hsl(0, 0%, 30%);
     color: white;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.4rem;
     cursor: pointer;
     grid-column: span 1; 
 }
@@ -79,5 +81,5 @@ button:active{
 }
 
 .ashkeyBtn:hover, .clrBtn:hover{
-    background-color: hsl(0, 0%, 60%);
+    background-color: hsl(0, 0%, 70%);
 }
